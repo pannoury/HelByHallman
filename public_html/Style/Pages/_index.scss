@@ -1,0 +1,80 @@
+#main-index{
+    .section{
+        width: 80%;
+        margin: auto;
+        &:not(:nth-child(1)){
+            padding-top: 40px;
+        }
+        #hero-wrapper{
+            .hero-50{
+                width: 50%;
+                &:nth-child(1){
+                    h2{
+                        font-size: 40px;
+                        margin: 0;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+    #mobility, #fascia, #personaltraining{
+        .section-header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            span{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                background-color: $blue0;
+                border-radius: 50%;
+                margin-right: 20px;
+                svg{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            h1{
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+    }
+    #mobility{
+        div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            div{
+                &:nth-last-child(1){
+                    display: flex;
+                    flex-direction: column;
+                    h2{
+                        margin-top: 0px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        li{
+                            display: flex;
+                            flex-direction: row;
+                            span{
+                                padding: 10px;
+                                display: flex;
+                                align-items: center;
+                                background-color: $blue0;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                                svg{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
