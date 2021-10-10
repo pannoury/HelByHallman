@@ -4,11 +4,11 @@ function scrollDetect(){
     const navbar = document.getElementsByTagName('header')[0];
     if(yDimension > 0){
         if(width > 875){
-            navbar.style.backgroundColor = "#7755df";
+            navbar.style.backgroundColor = "#fff";
         }
     }
     else if(yDimension === 0){
-        navbar.style,backgroundColor = "none";
+        navbar.style.backgroundColor = "";
     }
 }
 

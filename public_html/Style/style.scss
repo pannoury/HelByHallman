@@ -7,11 +7,15 @@ $blue20: #8961ff;
 
 
 body{
+    background-color: #f4f4f4;
     margin: 0;
     font-family: 'Roboto';
 }
 main{
-    padding-top: 103px;
+    padding-top: 82px;
+}
+a:visited{
+    color: inherit;
 }
 .button-blue{
     padding: 12px 22px;
@@ -32,3 +36,5 @@ ul{
 
 @import './Pages/index';
 @import './Components/navbar';
+@import './Components/footer';
+@import './Pages/contact';
