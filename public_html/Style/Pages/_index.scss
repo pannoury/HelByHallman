@@ -1,93 +1,191 @@
-#main-index{
-    .section{
-        width: 80%;
-        margin: auto;
-        &:not(:nth-child(1)){
-            padding-top: 40px;
-        }
-        #hero-wrapper{
-            display: flex;
-            flex-direction: row;
-            .hero-50{
-                width: 50%;
-                &:nth-child(1){
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    div{
-                        h2{
-                            font-size: 46px;
-                            margin: 0;
-                            padding-top: 20px;
-                            line-height: 1.2;
+@media(min-width:875px){
+    #main-index{
+        .section{
+            width: 80%;
+            margin: auto;
+            &:not(:nth-child(1)){
+                padding-top: 40px;
+            }
+            #hero-wrapper{
+                display: flex;
+                flex-direction: row;
+                .hero-50{
+                    width: 50%;
+                    &:nth-child(1){
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        div{
+                            h2{
+                                font-size: 46px;
+                                margin: 0;
+                                padding-top: 20px;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 80%;
+                            border-radius: 50%;
                         }
                     }
                 }
-                &:nth-child(2){
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img{
-                        width: 80%;
-                        border-radius: 50%;
-                    }
-                }
             }
         }
-    }
-    #mobility, #fascia, #personaltraining{
-        .section-header{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            span{
-                padding: 10px;
+        #mobility, #fascia, #personaltraining{
+            .section-header{
                 display: flex;
+                flex-direction: row;
                 align-items: center;
-                background-color: $blue0;
-                border-radius: 50%;
-                margin-right: 20px;
-                svg{
-                    width: 50px;
-                    height: 50px;
+                span{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $blue0;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    svg{
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
-            }
-            h1{
-                font-size: 40px;
-                margin: 0;
+                h1{
+                    font-size: 40px;
+                    margin: 0;
+                }
             }
         }
-    }
-    #mobility{
-        div:nth-child(2){
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            div{
-                &:nth-child(1){
-                    width: 60%;
-                }
-                &:nth-last-child(1){
-                    display: flex;
-                    flex-direction: column;
-                    width: 30%;
-                    h2{
-                        margin-top: 0px;
+        #mobility{
+            div:nth-child(2){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                div{
+                    &:nth-child(1){
+                        width: 60%;
                     }
-                    ul{
+                    &:nth-last-child(1){
                         display: flex;
                         flex-direction: column;
-                        li{
+                        width: 30%;
+                        h2{
+                            margin-top: 0px;
+                        }
+                        ul{
                             display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            span{
-                                font-size: 28px;
-                                margin-right: 10px;
-                                color: $blue10;
+                            flex-direction: column;
+                            li{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                span{
+                                    font-size: 28px;
+                                    margin-right: 10px;
+                                    color: $blue10;
+                                }
+                                h3{
+                                    margin: 0;
+                                }
                             }
-                            h3{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:875px){
+    #main-index{
+        overflow: hidden;
+        .section{
+            &:not(:nth-child(1)){
+                padding-top: 40px;
+            }
+            #hero-wrapper{
+                display: flex;
+                flex-direction: column-reverse;
+                .hero-50{
+                    &:nth-child(1){
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        div{
+                            h2{
+                                font-size: 2.2rem;
                                 margin: 0;
+                                padding-top: 20px;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 20px;
+                        img{
+                            width: 80%;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        #mobility, #fascia, #personaltraining{
+            .section-header{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                span{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $blue0;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                h1{
+                    font-size: 2rem;
+                    margin: 0;
+                }
+            }
+        }
+        #mobility{
+            div:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                div{
+                    &:nth-last-child(1){
+                        display: flex;
+                        flex-direction: column;
+                        h2{
+                            margin-top: 0px;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            li{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                span{
+                                    font-size: 28px;
+                                    margin-right: 10px;
+                                    color: $blue10;
+                                }
+                                h3{
+                                    margin: 0;
+                                }
                             }
                         }
                     }

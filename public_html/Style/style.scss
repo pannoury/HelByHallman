@@ -12,7 +12,13 @@ body{
     font-family: 'Roboto';
 }
 main{
-    padding-top: 82px;
+    @media(min-width:875px){
+        padding-top: 82px;
+    }
+    @media(max-width:875px){
+        padding: 82px 10px 10px 10px;
+        width: calc(100vw - 20px);
+    }
 }
 a:visited{
     color: inherit;

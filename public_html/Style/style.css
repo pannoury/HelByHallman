@@ -5,8 +5,16 @@ body {
   font-family: "Roboto";
 }
 
-main {
-  padding-top: 82px;
+@media (min-width: 875px) {
+  main {
+    padding-top: 82px;
+  }
+}
+@media (max-width: 875px) {
+  main {
+    padding: 82px 10px 10px 10px;
+    width: calc(100vw - 20px);
+  }
 }
 
 a:visited {
@@ -31,104 +39,191 @@ ul {
   padding: 0;
 }
 
-#main-index .section {
-  width: 80%;
-  margin: auto;
+@media (min-width: 875px) {
+  #main-index .section {
+    width: 80%;
+    margin: auto;
+  }
+  #main-index .section:not(:nth-child(1)) {
+    padding-top: 40px;
+  }
+  #main-index .section #hero-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-index .section #hero-wrapper .hero-50 {
+    width: 50%;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(1) div h2 {
+    font-size: 46px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 1.2;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(2) img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  #main-index #mobility .section-header, #main-index #fascia .section-header, #main-index #personaltraining .section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #main-index #mobility .section-header span, #main-index #fascia .section-header span, #main-index #personaltraining .section-header span {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #6648bd;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  #main-index #mobility .section-header span svg, #main-index #fascia .section-header span svg, #main-index #personaltraining .section-header span svg {
+    width: 50px;
+    height: 50px;
+  }
+  #main-index #mobility .section-header h1, #main-index #fascia .section-header h1, #main-index #personaltraining .section-header h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  #main-index #mobility div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-child(1) {
+    width: 60%;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) h2 {
+    margin-top: 0px;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li span {
+    font-size: 28px;
+    margin-right: 10px;
+    color: #7755df;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li h3 {
+    margin: 0;
+  }
 }
-#main-index .section:not(:nth-child(1)) {
-  padding-top: 40px;
+@media (max-width: 875px) {
+  #main-index {
+    overflow: hidden;
+  }
+  #main-index .section:not(:nth-child(1)) {
+    padding-top: 40px;
+  }
+  #main-index .section #hero-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(1) div h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 1.2;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  #main-index .section #hero-wrapper .hero-50:nth-child(2) img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  #main-index #mobility .section-header, #main-index #fascia .section-header, #main-index #personaltraining .section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #main-index #mobility .section-header span, #main-index #fascia .section-header span, #main-index #personaltraining .section-header span {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #6648bd;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  #main-index #mobility .section-header span svg, #main-index #fascia .section-header span svg, #main-index #personaltraining .section-header span svg {
+    width: 30px;
+    height: 30px;
+  }
+  #main-index #mobility .section-header h1, #main-index #fascia .section-header h1, #main-index #personaltraining .section-header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  #main-index #mobility div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) h2 {
+    margin-top: 0px;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li span {
+    font-size: 28px;
+    margin-right: 10px;
+    color: #7755df;
+  }
+  #main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li h3 {
+    margin: 0;
+  }
 }
-#main-index .section #hero-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-#main-index .section #hero-wrapper .hero-50 {
-  width: 50%;
-}
-#main-index .section #hero-wrapper .hero-50:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#main-index .section #hero-wrapper .hero-50:nth-child(1) div h2 {
-  font-size: 46px;
-  margin: 0;
-  padding-top: 20px;
-  line-height: 1.2;
-}
-#main-index .section #hero-wrapper .hero-50:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#main-index .section #hero-wrapper .hero-50:nth-child(2) img {
-  width: 80%;
-  border-radius: 50%;
-}
-#main-index #mobility .section-header, #main-index #fascia .section-header, #main-index #personaltraining .section-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#main-index #mobility .section-header span, #main-index #fascia .section-header span, #main-index #personaltraining .section-header span {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  background-color: #6648bd;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-#main-index #mobility .section-header span svg, #main-index #fascia .section-header span svg, #main-index #personaltraining .section-header span svg {
-  width: 50px;
-  height: 50px;
-}
-#main-index #mobility .section-header h1, #main-index #fascia .section-header h1, #main-index #personaltraining .section-header h1 {
-  font-size: 40px;
-  margin: 0;
-}
-#main-index #mobility div:nth-child(2) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#main-index #mobility div:nth-child(2) div:nth-child(1) {
-  width: 60%;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) h2 {
-  margin-top: 0px;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) ul {
-  display: flex;
-  flex-direction: column;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li span {
-  font-size: 28px;
-  margin-right: 10px;
-  color: #7755df;
-}
-#main-index #mobility div:nth-child(2) div:nth-last-child(1) ul li h3 {
-  margin: 0;
-}
-
 header {
   display: flex;
   justify-content: center;
   padding: 14px;
   position: fixed;
-  width: calc(100% - 28px);
 }
 
 @media (min-width: 875px) {
+  header {
+    width: calc(100% - 28px);
+  }
+
   #navbar-desktop {
     width: 80%;
     display: flex;
@@ -161,11 +256,16 @@ header {
     text-decoration: none;
   }
 
-  #navbar-mobile {
+  #navbar-mobile, #navbar-mobile-extended {
     display: none;
   }
 }
 @media (max-width: 875px) {
+  header {
+    background-color: #fff;
+    width: calc(100vw - 28px);
+  }
+
   #navbar-mobile {
     width: 100%;
     display: flex;
@@ -176,21 +276,45 @@ header {
   #navbar-mobile #mobile-navlist-btn {
     display: flex;
     align-items: center;
-    background-color: #d4d4d4;
+    background-color: #6648bd;
     border-radius: 50%;
     padding: 10px;
   }
   #navbar-mobile #mobile-navlist-btn svg {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    fill: #fff;
   }
 
   #navbar-desktop {
     display: none;
   }
+
+  #navbar-mobile-extended {
+    position: fixed;
+    justify-content: center;
+    height: calc(100vh - 82px);
+    width: 0vw;
+    bottom: 0;
+    right: 0;
+    background-color: #6648bd;
+    overflow: hidden;
+    transition: width 0.5s ease-out;
+  }
+  #navbar-mobile-extended ul {
+    padding: 0;
+  }
+  #navbar-mobile-extended ul li {
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  #navbar-mobile-extended ul li a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
+  }
 }
 footer {
-  width: 100%;
   background-color: #7755df;
 }
 
@@ -242,8 +366,48 @@ footer {
 }
 @media (max-width: 875px) {
   #footer-wrapper {
+    padding: 20px;
+    text-align: center;
+  }
+  #footer-wrapper p {
+    color: white;
+  }
+  #footer-wrapper .footer-row {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    width: 80%;
+  }
+  #footer-wrapper .footer-row a {
+    text-decoration: none;
+    color: white;
+  }
+  #footer-wrapper .footer-row a:hover {
+    color: orange;
+  }
+  #footer-wrapper .footer-row ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    color: red;
+  }
+  #footer-wrapper .footer-row ul li {
+    font-weight: bold;
+  }
+  #footer-wrapper .footer-row svg {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+  }
+  #footer-wrapper .footer-row:nth-child(2) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer-wrapper .footer-row:nth-child(2) svg:nth-child(1) {
+    margin-right: 20px;
   }
 }
 #contact-head {
