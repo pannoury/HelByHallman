@@ -8,7 +8,7 @@ Personal trainer website on behalf of client.
 # Contributors
 **Patrick Tannoury**
 
-Website: codenoury.se
+Website https://www.codenoury.se
 
 E-mail: tannouryp@gmail.com
 
