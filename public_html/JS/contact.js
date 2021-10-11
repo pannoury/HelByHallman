@@ -10,3 +10,10 @@ window.onload = () => {
 window.onscroll = () => {
     navbar.scrollDetect()
 }
+
+document.getElementById('form-btn').onclick = () => {
+    var inputs = document.querySelectorAll('.contact-input');
+    for(let i=0; i<inputs.length; i++){
+        console.log(inputs[i].value)
+    }
+}

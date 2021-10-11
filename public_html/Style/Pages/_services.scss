@@ -1,0 +1,117 @@
+@media(min-width:875px){
+    #main-services{
+        #services-wrapper{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto 20px auto;
+            width: 80%;
+            .servies-wrapper-col{
+                width: 50%;
+                h1{
+                    margin-top: 0;
+                }
+                .services-extendable{
+                    border-top: 1px solid #c4c4c4;
+                    border-bottom: 1px solid #c4c4c4;
+                    &:not(:nth-last-child(1)){
+                        margin-bottom: 20px;
+                    }
+                    .services-extendable-btn{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 50px;
+                        background-color: #f4f4f4;
+                        border: none;
+                        width: 100%;
+                        span{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        svg{
+                            fill: black;
+                            height: 35px;
+                            width: 35px;
+                            transition: transform 0.5s ease-out;
+                        }
+                        &[aria-label="visible"]{
+                            svg{
+                                transform: rotate(45deg);
+                            }
+                        }
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 0.8;
+                        }
+                    }
+                    .services-description{
+                        &[aria-label="hidden"]{
+                            display: none;
+                        }
+                        &[aria-label="visible"]{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:875px){
+    #main-services{
+        #services-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 20px auto;
+            .servies-wrapper-col{
+                h1{
+                    margin-top: 10px;
+                }
+                .services-extendable{
+                    border-top: 1px solid #c4c4c4;
+                    border-bottom: 1px solid #c4c4c4;
+                    &:not(:nth-last-child(1)){
+                        margin-bottom: 20px;
+                    }
+                    .services-extendable-btn{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 50px;
+                        background-color: #f4f4f4;
+                        border: none;
+                        width: 100%;
+                        span{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        svg{
+                            fill: black;
+                            height: 35px;
+                            width: 35px;
+                            transition: transform 0.5s ease-out;
+                        }
+                        &[aria-label="visible"]{
+                            svg{
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .services-description{
+                        &[aria-label="hidden"]{
+                            display: none;
+                        }
+                        &[aria-label="visible"]{
+                            display: block;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

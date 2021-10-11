@@ -14,43 +14,45 @@
         <div id="navbar-desktop">
             <a href="index.html"><img src="./Assets/HelbyHallmanLogga.png" alt="logo" height="50px" width="150px"></a>
             <ul>
-                <li><a>Om mig</a></li>
-                <li><a>Tjänster</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="services.html">Tjänster</a></li>
                 <li><a id="contact-me-btn" href="contact.html">Kontakta mig</a></li>
             </ul>
         </div>
         <div id="navbar-mobile">
-            <a><img src="./Assets/HelbyHallmanLogga.png" alt="logo" height="50px" width="150px"></a>
+            <a href="index.html"><img src="./Assets/HelbyHallmanLogga.png" alt="logo" height="50px" width="150px"></a>
             <span id="mobile-navlist-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </span>
         </div>
+        <div id="navbar-mobile-extended" aria-label="hidden">
+            <ul>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="services.html">Tjänster</a></li>
+                <li><a href="contact.html">Kontakta mig</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
+            <div id="contact-whole-wrapper">
                 <div id="contact-head">
                     <div id="contact-head-wrapper">
-                        <div id="contact-head-right">
-                            <h1>
-                                Kontakta <span>mig</span>
-                            </h1>
+                        <div id="contact-head-left">
+                            <h1>Kontakta <span>mig</span></h1>
                             <p>
-                                Har du generella frågor om de <span>träningsformer jag erbjuder</span>  eller vill du boka in ett <span>träningspassmed mig?</span>  
-                                Hör av dig i kontaktformuläret nedan så ser jag till att svara inom tre arbetsdagar.
+                                Har du frågor kring de <span>träningsformer jag erbjuder</span> eller vill du boka in ett <span>träningspass med mig?</span>  
+                                Hör av dig i kontaktformuläret nedan så ser jag till att svara inom två till tre arbetsdagar.
                             </p>
                         </div>
-                        <div id="contact-head-left">
+                        <div id="contact-head-right">
                             <img src="./Assets/244521530_405513821099622_1234867792121237869_n.png">
                         </div>
                     </div>
                 </div>
-        </section>
-        <section>
             <div id="contact-form">
                 <div id="contact-form-wrapper">
-                    <h1>
-                        Kontaktformulär
-                    </h1>
+                    <h1>Kontaktformulär</h1>
                     <div class="contact-form-two-input">
                         <div class="contact-form-input-box">
                             <label>Förnamn</label>
@@ -61,11 +63,11 @@
                             <input type="text" class="contact-input">
                         </div>
                     </div>
-                    <div class="contact-form-input">
+                    <div class="contact-form-row">
                         <label>Mailadress</label>
                         <input type="text" class="contact-input">
                     </div>
-                    <div id="contact-form-options">
+                    <div class="contact-form-row">
                         <label>Vad behöver du hjälp med?</label>
                         <select name="Kontakt" class="contact-input">
                             <option value="Personlig Träning">Personlig Träning</option>
@@ -74,27 +76,26 @@
                             <option value="General">Generella Frågor</option>
                         </select>
                     </div>
-                    <div id="contact-form-textbox">
-                        <textarea placeholder="Skriv din fråga här" class="contact-input"></textarea>
+                    <div class="contact-form-row">
+                        <textarea class="contact-input"></textarea>
                     </div>
                     <div id="contact-gdpr">
-                        <input type="checkbox" required="true">
+                        <input type="checkbox" required="true" class="contact-input">
                         <p>Jag har läst och förstått <a href="./policy.html">användarvillkoren och hur min information sparas.</a></p>
                     </div>
-                    <div id="mail-container-button">
-                        <button>Skicka</button>
-                    </div>
+                    <button id="form-btn" class="button-white">Skicka</button>
                 </div>
             </div>
+        </div>
         </section>
     </main>
     <footer>
         <div id="footer-wrapper">
             <div class="footer-row">
                 <ul>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Om mig </a></li>
-                    <li><a href="#">Tjänster </a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig </a></li>
+                    <li><a href="services.html">Tjänster </a></li>
                     <li><a href="#">Datalagring & Sekretess</a></li>
                 </ul>
             </div>

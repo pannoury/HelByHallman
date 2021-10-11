@@ -35,12 +35,26 @@ a:visited{
         cursor: pointer;
     }
 }
+.button-white{
+    padding: 12px 22px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    &:hover{
+       cursor: pointer; 
+       opacity: 0.8;
+    }
+}
 ul{
     list-style-type: none;
     padding: 0;
 }
 
 @import './Pages/index';
+@import './Pages/contact';
+@import './Pages/services';
+@import './Pages/about';
 @import './Components/navbar';
 @import './Components/footer';
-@import './Pages/contact';

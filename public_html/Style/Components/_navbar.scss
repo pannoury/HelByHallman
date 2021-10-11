@@ -30,13 +30,22 @@ header{
                     padding: 12px 22px;
                     border-radius: 20px;
                 }
-                &:hover{
-                    cursor: pointer;
-                    opacity: 0.8;
+                &:not(:nth-last-child(1)){
+                    &:hover{
+                        cursor: pointer;
+                        border-bottom: 3px solid $blue0;
+                    }
                 }
                 a{
+                    color: black;
                     font-weight: bold;
                     text-decoration: none;  
+                }
+                #contact-me-btn{
+                    color: #fff;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                 }
             }
         }
