@@ -375,9 +375,8 @@ footer {
   #footer-wrapper .footer-row {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     margin: 20px auto 20px auto;
-    width: 80%;
   }
   #footer-wrapper .footer-row a {
     text-decoration: none;
@@ -387,15 +386,17 @@ footer {
     color: orange;
   }
   #footer-wrapper .footer-row ul {
-    width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+    flex-direction: column;
     color: red;
+    text-align: left;
   }
   #footer-wrapper .footer-row ul li {
     font-weight: bold;
+    font-size: 20px;
+  }
+  #footer-wrapper .footer-row ul li:not(:nth-last-child(1)) {
+    margin-bottom: 14px;
   }
   #footer-wrapper .footer-row svg {
     fill: #fff;
@@ -404,7 +405,6 @@ footer {
   }
   #footer-wrapper .footer-row:nth-child(2) {
     flex-direction: row;
-    justify-content: center;
   }
   #footer-wrapper .footer-row:nth-child(2) svg:nth-child(1) {
     margin-right: 20px;
