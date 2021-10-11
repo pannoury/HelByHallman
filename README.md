@@ -2,7 +2,7 @@
 Personal trainer website on behalf of client.
 
 <p align="center">
-  <img src="https://github.com/pannoury/HelByHallman/blob/main/public_html/Assets/HelbyHallmanLogga.png" alt="HelByHallman-logo"/>
+  <img src="https://github.com/pannoury/HelByHallman/blob/main/public_html/Assets/HelbyHallmanLogga.png" alt="HelByHallman-logo" height="300px"/>
 </p>
 
 # Contributors
